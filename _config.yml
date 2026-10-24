@@ -1,0 +1,51 @@
+title: "Estudios HYS · Diario de desarrollo"
+description: "Diario de desarrollo de Estudios HYS, estudio indie de juegos móviles."
+url: "https://estudios-hys.github.io"
+baseurl: "/blog"
+lang: es
+
+author: "Estudios HYS"
+email: "soporte@estudioshys.com"
+
+show_excerpts: true
+
+minima:
+  date_format: "%d/%m/%Y"
+
+header_pages:
+  - index.md
+  - sobre-nosotros.md
+  - juegos.md
+
+# En Jekyll 3 (el de GitHub Pages) `exclude` sustituye la lista por defecto.
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .sass-cache
+  - .jekyll-cache
+  - gemfiles
+
+theme: minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
